@@ -1,4 +1,4 @@
-# AdaptableOutdoors
+# Adaptable Outdoors
 A web application for Adaptable outdoors
 
 # Using:
