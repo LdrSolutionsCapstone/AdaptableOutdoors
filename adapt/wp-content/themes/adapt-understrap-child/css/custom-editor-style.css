@@ -329,7 +329,7 @@ template {
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: darkgray;
+  --primary: tomato;
   --secondary: blue;
   --success: #28a745;
   --info: #17a2b8;
@@ -404,21 +404,21 @@ template {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #e7e7e7;
+  background-color: #ffd3cb;
 }
 .table-primary th,
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
-  border-color: #d2d2d2;
+  border-color: #ffae9f;
 }
 
 .table-hover .table-primary:hover {
-  background-color: #dadada;
+  background-color: #ffbdb2;
 }
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #dadada;
+  background-color: #ffbdb2;
 }
 
 .table-secondary,
@@ -935,12 +935,12 @@ mark,
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: darkgray;
+  color: tomato;
 }
 
 .has-primary-background-color {
-  background-color: darkgray;
-  border-color: darkgray;
+  background-color: tomato;
+  border-color: tomato;
 }
 
 .has-secondary-color,
