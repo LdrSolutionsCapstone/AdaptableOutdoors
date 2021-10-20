@@ -1,0 +1,11 @@
+/node_modules
+
+# VS Code Files
+/.vscode
+
+#parcel files, these files are for the dev enviro
+/dist
+/.parcel-cache
+
+# OS FILES, for mac users
+/.DS_Store
