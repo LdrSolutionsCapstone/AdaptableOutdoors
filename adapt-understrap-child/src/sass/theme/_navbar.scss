@@ -1,3 +1,81 @@
 .main-menu {
   font-size: 2rem;
 }
+
+.nav-link {
+  color: $black;
+  font-size: 1.5rem;
+}
+
+.header-front {
+  text-align: center;
+  background-image: url(http://localhost/adapt-local/wp-content/uploads/2021/10/P1220286.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0rem 20rem 0rem;
+  h1 {
+    color: white;
+    font-size: 2rem;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  button,
+  .main-button {
+    padding: 1rem;
+    background-color: $secondary;
+    color: white;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.main-nav {
+  .container {
+    padding: 0rem;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+#page-wrapper {
+  padding: 0rem;
+}
+
+.nav-bar {
+  .container {
+    padding: 0rem;
+  }
+}
+
+.community-child {
+  width: 33%;
+  text-align: center;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+}
+
+.main-button {
+  padding: 1rem;
+  background-color: $secondary;
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+
+.main-button:hover {
+  background-color: #52228a;
+}
+
+.post {
+  a {
+    color: black;
+  }
+}
