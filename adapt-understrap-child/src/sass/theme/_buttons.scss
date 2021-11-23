@@ -1,0 +1,23 @@
+// button styling in here!
+
+.btn-primary {
+  padding: 1rem;
+  background-color: $primary;
+  color: white;
+  border: solid 2px $primary;
+  box-shadow: none;
+  display: block;
+  max-width: 15rem;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: $white;
+}
+
+.community-child {
+  .btn-primary {
+    margin: 0 auto;
+  }
+}
