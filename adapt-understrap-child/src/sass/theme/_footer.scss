@@ -1,0 +1,11 @@
+@import "./child_theme_variables";
+
+.site-footer {
+  color: $white;
+  background-color: $purple;
+}
+
+#footer_menu {
+  height: 10rem;
+  flex-wrap: wrap;
+}

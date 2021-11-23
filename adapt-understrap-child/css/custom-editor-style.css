@@ -131,13 +131,12 @@ sup {
 }
 
 a {
-  color: blue;
-  -webkit-text-decoration: blue;
-  text-decoration: blue;
+  color: #0a0a0a;
+  text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #c8c8d9;
+  color: #b2a6cf;
   text-decoration: underline;
 }
 
@@ -344,8 +343,8 @@ template {
   --white: #f5f5f8;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #f5f5f8;
-  --secondary: #6c757d;
+  --primary: #b2a6cf;
+  --secondary: #2a5417;
   --success: #2a5417;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -419,41 +418,41 @@ template {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #f5f5f8;
+  background-color: #e2dfed;
 }
 .table-primary th,
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
-  border-color: #f5f5f8;
+  border-color: #d2cce3;
 }
 
 .table-hover .table-primary:hover {
-  background-color: #e6e6ee;
+  background-color: #d3cfe4;
 }
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #e6e6ee;
+  background-color: #d3cfe4;
 }
 
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #cfd1d6;
+  background-color: #bcc8b9;
 }
 .table-secondary th,
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
-  border-color: #aeb2b8;
+  border-color: #8ba183;
 }
 
 .table-hover .table-secondary:hover {
-  background-color: #c1c4ca;
+  background-color: #aebdab;
 }
 .table-hover .table-secondary:hover > td,
 .table-hover .table-secondary:hover > th {
-  background-color: #c1c4ca;
+  background-color: #aebdab;
 }
 
 .table-success,
@@ -950,22 +949,22 @@ mark,
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #f5f5f8;
+  color: #b2a6cf;
 }
 
 .has-primary-background-color {
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
+  background-color: #b2a6cf;
+  border-color: #b2a6cf;
 }
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: #6c757d;
+  color: #2a5417;
 }
 
 .has-secondary-background-color {
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #2a5417;
+  border-color: #2a5417;
 }
 
 .has-success-color,

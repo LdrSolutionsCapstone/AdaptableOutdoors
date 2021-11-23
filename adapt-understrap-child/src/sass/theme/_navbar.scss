@@ -1,3 +1,5 @@
+// Navbar styling in here !
+
 .main-menu {
   font-size: 2rem;
 }
@@ -19,15 +21,6 @@
     width: 75%;
     margin: 0 auto;
     margin-bottom: 2rem;
-  }
-
-  button,
-  .main-button {
-    padding: 1rem;
-    background-color: $secondary;
-    color: white;
-    border: none;
-    box-shadow: none;
   }
 }
 
@@ -51,31 +44,3 @@ main {
   }
 }
 
-.community-child {
-  width: 33%;
-  text-align: center;
-
-  img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
-}
-
-.main-button {
-  padding: 1rem;
-  background-color: $secondary;
-  color: white;
-  border: none;
-  box-shadow: none;
-}
-
-.main-button:hover {
-  background-color: #52228a;
-}
-
-.post {
-  a {
-    color: black;
-  }
-}

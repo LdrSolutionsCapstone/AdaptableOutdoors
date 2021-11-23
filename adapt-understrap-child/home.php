@@ -15,7 +15,9 @@ get_header();
         <!-- start the loop | the loop grabs all the content and cycles through all of the content until it’s done. -->
         <?php while (have_posts()) : the_post(); ?>
             <!-- display the all of the blog posts -->
+            <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <?php echo get_the_date(); ?>
             <?php the_excerpt(); ?>
         <?php endwhile; ?>
         <!-- end while loop -->
