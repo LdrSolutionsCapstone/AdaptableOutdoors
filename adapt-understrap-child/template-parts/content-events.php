@@ -23,7 +23,7 @@ defined('ABSPATH') || exit;
 
     <section class="pt-5">
         <h2 class="mb-5">Join The Community</h2>
-        <div class="">
+        <div class="d-flex flex-wrap justify-content-between">
 
             <!-- arguments for events -->
             <?php
