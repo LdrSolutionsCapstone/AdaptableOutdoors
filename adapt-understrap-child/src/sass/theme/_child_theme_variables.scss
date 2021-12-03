@@ -3,6 +3,11 @@
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 // ---npm run watch---
 
+// @font-face {
+//   font-family: "Coustard", serif;
+//   src: url("../fonts/Coustard-Regular.woff") format("woff");
+// }
+
 // -------Color Variables-------
 $purple: #b2a6cf;
 $green: #2a5417;
@@ -10,8 +15,23 @@ $lightGreen: #8ee633;
 $white: #f5f5f8;
 $black: #0a0a0a;
 
-$primary: $purple;
+$primary: $white;
 $secondary: $green;
 
 $link-color: $black;
 $link-hover-color: $purple;
+
+
+
+// fonts
+$font-family-sans-serif: "Coustard", serif !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+$headings-font-family: "Archivo", sans-serif;
+
+
+// breakpoints for container
+$container-max-widths: (
+  xl: 1600px,
+);

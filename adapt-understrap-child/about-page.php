@@ -28,12 +28,10 @@ $container = get_theme_mod('understrap_container_type');
 			<?php get_template_part('global-templates/left-sidebar-check'); ?>
 
 			<main class="site-main" id="main">
-				<h1>Im a custom about page</h1>
-
 				<?php
 				while (have_posts()) {
 					the_post();
-					get_template_part('loop-templates/content', 'page');
+					get_template_part('template-parts/content', 'about');
 
 					// If comments are open or we have at least one comment, load up the comment template.
 					if (comments_open() || get_comments_number()) {

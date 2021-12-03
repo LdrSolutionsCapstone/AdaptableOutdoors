@@ -32,7 +32,7 @@ $container = get_theme_mod('understrap_container_type');
 
 			<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'understrap'); ?></a>
 
-			<nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-primary" aria-labelledby="main-nav-label">
+			<nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-primary" aria-labelledby="main-nav-label">
 
 				<h2 id="main-nav-label" class="sr-only">
 					<?php esc_html_e('Main Navigation', 'understrap'); ?>
@@ -41,6 +41,7 @@ $container = get_theme_mod('understrap_container_type');
 				<?php if ('container' === $container) : ?>
 					<!-- flex container -->
 					<div class="container flex-row-reverse">
+
 					<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
@@ -62,6 +63,7 @@ $container = get_theme_mod('understrap_container_type');
 					}
 					?>
 					<!-- end custom logo -->
+					<p class="site-title"><?php echo get_bloginfo('title') ?></p>
 
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'understrap'); ?>">
 						<span class="navbar-toggler-icon"></span>
