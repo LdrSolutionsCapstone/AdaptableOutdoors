@@ -22,7 +22,15 @@ defined('ABSPATH') || exit;
     ?>
 
     <section class="pt-5">
-        <h2 class="mb-5">Register to volunteer</h2>
+
+    <!-- BANNER: Front end content -->
+        <header>
+            <?php
+            echo get_the_post_thumbnail($post->ID, 'large');
+            the_content()
+            ?>
+        </header>
+
         <div class="d-flex flex-wrap justify-content-between">
 
             <!-- arguments for Volunteer -->

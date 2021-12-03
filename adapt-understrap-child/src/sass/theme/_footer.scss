@@ -3,9 +3,55 @@
 .site-footer {
   color: $white;
   background-color: $purple;
+  // max-width: 1140px;
+  margin: 0 auto;
+  // .nav-link {
+  //   padding: 1rem;
+  // }
+
+  a {
+    margin-right: 0rem;
+  }
+
+  p {
+    font-size: 2rem;
+    font-family: "Archivo", sans-serif;
+    margin: 1rem 0rem 0rem 0rem;
+    color: $black;
+    max-width: 10.9rem;
+  }
+  .site-info {
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0rem;
+    line-height: 1.25;
+  }
 }
 
 #footer_menu {
   height: 10rem;
   flex-wrap: wrap;
+  max-width: 22rem;
+  margin-top: 1rem;
+}
+
+#wrapper-footer {
+  background-color: $purple;
+}
+
+@media screen and (max-width: 790px) {
+  #footer_menu {
+    height: 15rem;
+  }
+
+  .site-footer {
+    .site-info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0rem 15px;
+    }
+  }
 }

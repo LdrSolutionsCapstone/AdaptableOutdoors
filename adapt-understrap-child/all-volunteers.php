@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Volunteer
+ * Template Name: All Volunteers
  * Display all volunteer positions from positions cpt
  * @package Understrap
  * @since 1.0.0

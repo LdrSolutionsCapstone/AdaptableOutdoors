@@ -6,7 +6,8 @@
 
 .nav-link {
   color: $black;
-  font-size: 1.5rem;
+  font-size: 1.36rem;
+  font-family: "Archivo", sans-serif;
 }
 
 .header-front {
@@ -44,3 +45,30 @@ main {
   }
 }
 
+.menu-item-29 {
+  background-color: $lightGreen;
+  text-align: center;
+}
+
+.menu-item-29:hover {
+  background-color: $green;
+  color: $white;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-family: "Archivo", sans-serif;
+  margin: 0rem 0rem 0rem auto;
+  color: $black;
+  max-width: 10.9rem;
+  line-height: 1.25;
+}
+
+#navbarNavDropdown {
+  overflow: hidden;
+  max-width: 43rem;
+}
+
+.navbar-brand {
+  margin-right: 0rem;
+}

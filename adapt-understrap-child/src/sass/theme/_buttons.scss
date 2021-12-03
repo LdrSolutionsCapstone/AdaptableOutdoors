@@ -2,9 +2,9 @@
 
 .btn-primary {
   padding: 1rem;
-  background-color: $primary;
+  background-color: $purple;
   color: white;
-  border: solid 2px $primary;
+  border: solid 2px $purple;
   box-shadow: none;
   display: block;
   max-width: 15rem;
@@ -14,6 +14,8 @@
 .btn-primary:hover {
   cursor: pointer;
   background-color: $white;
+  text-decoration: none;
+  color: $purple;
 }
 
 .community-child {

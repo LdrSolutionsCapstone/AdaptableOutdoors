@@ -73,6 +73,9 @@ $container = get_theme_mod('understrap_container_type');
 			</div><!-- #content -->
 
 		</div><!-- #page-wrapper -->
+	</div>
+</div>
 
-		<?php
-		get_footer();
+
+<?php
+get_footer();

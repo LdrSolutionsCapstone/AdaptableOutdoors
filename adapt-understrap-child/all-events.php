@@ -1,11 +1,9 @@
 <?php
 
 /**
- * Template Name: Events
- * Display all events from events cpt
+ * Template Name: All Events
+ * descriptiom: displaying all events
  * @package Understrap
- * @since 1.0.0
- * 
  */
 
 // Exit if accessed directly.
