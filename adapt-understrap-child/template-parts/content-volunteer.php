@@ -23,10 +23,9 @@ defined('ABSPATH') || exit;
 
     <section class="pt-5">
 
-    <!-- BANNER: Front end content -->
+        <!-- BANNER: Front end content -->
         <header>
             <?php
-            echo get_the_post_thumbnail($post->ID, 'large');
             the_content()
             ?>
         </header>
@@ -37,7 +36,7 @@ defined('ABSPATH') || exit;
             <?php
             $args = array(
                 'post_type' => 'Volunteer',
-                'post_per_page' => 6, // display the 3 most recent Volunteer 
+                'post_per_page' => 3, // display the 3 most recent Volunteer 
             );
             // pass args into query
             $the_volunteer_query = new WP_Query($args);
@@ -49,26 +48,8 @@ defined('ABSPATH') || exit;
                     <!-- volunteer CARD -->
                     <div class="community-child">
                         <?php the_title('<h4 class="card-volunteer-title">', '</h4>') ?>
-                        <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
-                        <?php the_excerpt() ?>
-                        <?php
-                        $term = get_the_category();
-                        if ($term) {
-                            foreach ($term as $t) {
-                                $t = get_term($t);
-                                print_r('<a href="' . get_term_link($t) . '">' . $t->name . '</a>');
-                            }
-                        }
-
-                        ?>
-                        <footer class="volunteer-card-footer">
-                            <?php $card_footer = get_field('card_footer') ?>
-                            <?php if ($card_footer) : ?>
-                                <p>Posted by: <?php _e($card_footer['author']) ?></p>
-                                <p>Date of volunteer: <?php _e($card_footer['date']) ?></p>
-
-                            <?php endif; ?>
-                        </footer>
+                        <div class="community-child-content"><?php the_content() ?></div>
+                        <a class="btn-primary" href=" https://adapt.web.dmitcapstone.ca/adapt/participate/">Register</a>
                     </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>

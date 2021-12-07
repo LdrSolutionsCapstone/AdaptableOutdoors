@@ -10,6 +10,10 @@
   font-family: "Archivo", sans-serif;
 }
 
+.nav-link:hover {
+  color: $white;
+}
+
 .header-front {
   text-align: center;
   background-image: url(http://localhost/adapt-local/wp-content/uploads/2021/10/P1220286.jpg);
@@ -22,12 +26,6 @@
     width: 75%;
     margin: 0 auto;
     margin-bottom: 2rem;
-  }
-}
-
-.main-nav {
-  .container {
-    padding: 0rem;
   }
 }
 
@@ -48,11 +46,13 @@ main {
 .menu-item-29 {
   background-color: $lightGreen;
   text-align: center;
+  border-radius: 1rem 0.2rem;
 }
 
 .menu-item-29:hover {
   background-color: $green;
   color: $white;
+  border-radius: 1rem 0.2rem;
 }
 
 .site-title {
@@ -62,6 +62,14 @@ main {
   color: $black;
   max-width: 10.9rem;
   line-height: 1.25;
+}
+
+@media (max-width: 400px) {
+  .site-title,
+  .site-info p {
+    font-size: 1.5rem;
+    width: 8rem;
+  }
 }
 
 #navbarNavDropdown {
