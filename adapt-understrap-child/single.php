@@ -22,7 +22,7 @@ $container = get_theme_mod('understrap_container_type');
 			<!-- Do the left sidebar check get_template_part( 'global-templates/left-sidebar-check' );-->
 			<?php  ?>
 
-			<main class="site-main" id="main">
+			<main class="site-main-volunteer" id="main">
 
 				<?php
 				while (have_posts()) {

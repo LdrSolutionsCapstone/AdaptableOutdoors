@@ -219,3 +219,21 @@ function create_post_type_events()
 }
 
 add_action('init', 'create_post_type_events');
+
+// // image compression
+function my_prefix_regenerate_thumbnail_quality()
+{
+    return 80;
+}
+
+add_filter('jpeg_quality', 'my_prefix_regenerate_thumbnail_quality');
+
+
+function new_excerpt_more($more)
+{
+    global $post;
+    if ($post->post_type == 'volunteer') {
+        return '';
+    }
+}
+add_filter('excerpt_more', 'new_excerpt_more');

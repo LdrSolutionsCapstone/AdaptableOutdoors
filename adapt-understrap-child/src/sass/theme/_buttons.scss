@@ -1,5 +1,23 @@
 // button styling in here!
 
+.hollow-btn {
+  padding: 1rem;
+  background-color: $white;
+  color: $green;
+  border: solid 2px $green;
+  box-shadow: none;
+  display: block;
+  max-width: 15rem;
+  text-align: center;
+}
+
+.hollow-btn:hover {
+  cursor: pointer;
+  background-color: $green;
+  text-decoration: none;
+  color: $white;
+}
+
 .btn-primary {
   padding: 1rem;
   background-color: $purple;
@@ -16,10 +34,4 @@
   background-color: $white;
   text-decoration: none;
   color: $purple;
-}
-
-.community-child {
-  .btn-primary {
-    margin: 0 auto;
-  }
 }

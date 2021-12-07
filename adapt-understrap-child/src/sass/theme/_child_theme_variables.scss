@@ -21,7 +21,7 @@ $secondary: $green;
 $link-color: $black;
 $link-hover-color: $purple;
 
-
+// button overwrites
 
 // fonts
 $font-family-sans-serif: "Coustard", serif !default;
@@ -30,8 +30,48 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 $font-family-base: $font-family-sans-serif !default;
 $headings-font-family: "Archivo", sans-serif;
 
-
 // breakpoints for container
 $container-max-widths: (
   xl: 1600px,
 );
+
+.community-child {
+  width: 80rem;
+  padding: 2rem;
+  img {
+    width: 100%;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+    padding-right: 2rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.site-main-volunteer {
+  max-width: 50rem;
+  padding: 15px;
+}
+
+main {
+  margin-bottom: 5rem;
+}
+
+.community-child-content {
+  display: flex;
+  flex-wrap: wrap;
+
+  p {
+    flex: 50%;
+    min-width: 30rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .community-child {
+    width: 20rem;
+    padding: 2rem;
+  }
+}

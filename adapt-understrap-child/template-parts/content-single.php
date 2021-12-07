@@ -26,19 +26,16 @@ defined('ABSPATH') || exit;
 
     <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
 
-    <div class="entry-content">
+    <div class="single-entry-content">
 
         <?php
         the_content();
+        ?>
+        <a href="#">participate</a>
+        <?php
         understrap_link_pages();
         ?>
 
     </div><!-- .entry-content -->
-
-    <footer class="entry-footer">
-
-        <?php understrap_entry_footer(); ?>
-
-    </footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
