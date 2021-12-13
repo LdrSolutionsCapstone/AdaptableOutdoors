@@ -3,16 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,500;0,900;1,400&family=Coustard:wght@400;900&display=swap");
 .community-child {
   width: 80rem;
-  padding: 2rem;
+  margin-bottom: 5rem;
 }
 .community-child img {
   width: 100%;
   margin-bottom: 2rem;
-  max-width: 30rem;
   padding-right: 2rem;
 }
 .community-child p {
   margin-bottom: 1rem;
+}
+.community-child h4 {
+  margin-bottom: 2rem;
 }
 
 .site-main-volunteer {
@@ -34,11 +36,73 @@ main {
 }
 
 @media (max-width: 500px) {
-  .community-child {
-    width: 20rem;
-    padding: 2rem;
+  .community-child-content {
+    max-width: 25rem;
+    padding: 0rem;
+  }
+  .community-child-content p {
+    min-width: 15rem;
   }
 }
+.volunteer-body h2 {
+  width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.volunteer-header {
+  margin-bottom: 4rem;
+}
+
+.volunteer-intro {
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+.volunteer-intro img {
+  width: 35rem;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+.volunteer-intro div {
+  min-width: 19rem;
+  max-width: 50rem;
+}
+
+.social-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0rem;
+}
+.social-container li {
+  flex: 1 1 20rem;
+  list-style: none;
+  text-align: left;
+}
+
+.page-entry-content {
+  padding: 15px;
+}
+.page-entry-content img {
+  width: 100%;
+}
+.page-entry-content .card {
+  width: 30rem;
+}
+.page-entry-content h3 {
+  padding-top: 5rem;
+}
+
+h1 {
+  margin-bottom: 5rem;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -14781,6 +14845,7 @@ main {
   padding: 0rem 1rem 0rem 1rem;
   margin-bottom: 3rem;
   font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 .banner-front-page .btn-primary {
   margin: 0 auto;
@@ -14833,16 +14898,18 @@ main {
 
 .community-child {
   width: 80rem;
-  padding: 2rem;
+  margin-bottom: 5rem;
 }
 .community-child img {
   width: 100%;
   margin-bottom: 2rem;
-  max-width: 30rem;
   padding-right: 2rem;
 }
 .community-child p {
   margin-bottom: 1rem;
+}
+.community-child h4 {
+  margin-bottom: 2rem;
 }
 
 .site-main-volunteer {
@@ -14864,11 +14931,73 @@ main {
 }
 
 @media (max-width: 500px) {
-  .community-child {
-    width: 20rem;
-    padding: 2rem;
+  .community-child-content {
+    max-width: 25rem;
+    padding: 0rem;
+  }
+  .community-child-content p {
+    min-width: 15rem;
   }
 }
+.volunteer-body h2 {
+  width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.volunteer-header {
+  margin-bottom: 4rem;
+}
+
+.volunteer-intro {
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+.volunteer-intro img {
+  width: 35rem;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+.volunteer-intro div {
+  min-width: 19rem;
+  max-width: 50rem;
+}
+
+.social-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0rem;
+}
+.social-container li {
+  flex: 1 1 20rem;
+  list-style: none;
+  text-align: left;
+}
+
+.page-entry-content {
+  padding: 15px;
+}
+.page-entry-content img {
+  width: 100%;
+}
+.page-entry-content .card {
+  width: 30rem;
+}
+.page-entry-content h3 {
+  padding-top: 5rem;
+}
+
+h1 {
+  margin-bottom: 5rem;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
 .site-footer {
   color: #f5f5f8;
   background-color: #b2a6cf;

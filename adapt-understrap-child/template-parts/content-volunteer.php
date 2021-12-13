@@ -24,13 +24,14 @@ defined('ABSPATH') || exit;
     <section class="pt-5">
 
         <!-- BANNER: Front end content -->
-        <header>
+        <header class="volunteer-header">
             <?php
             the_content()
             ?>
         </header>
 
-        <div class="d-flex flex-wrap justify-content-between">
+        <div class="volunteer-body d-flex flex-wrap justify-content-between">
+            <h2>Current Postions</h2>
 
             <!-- arguments for Volunteer -->
             <?php

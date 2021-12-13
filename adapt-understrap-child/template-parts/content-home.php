@@ -141,8 +141,32 @@ defined('ABSPATH') || exit;
 
 
         </section>
-        <section>
-            <!-- <h2>Social Links</h2> -->
+        <section class="social-links-section">
+            <h2>Social Links</h2>
+            <ul class="social-container">
+                <?php
+                $social_area = get_field('social_group');
+                $you_tube_area = $social_area['you_tube'];
+                $facebook_area = $social_area['facebook'];
+                $instagram_area = $social_area['instagram'];
+                // if($social_area):
+                ?>
+                <li>
+                    <a href="<?php echo $you_tube_area['link'] ?>">
+                        <img src="<?php echo $you_tube_area['img']  ?>" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo $facebook_area['link'] ?>">
+                        <img src="<?php echo $facebook_area['img']  ?>" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo $instagram_area['link'] ?>">
+                        <img src="<?php echo $instagram_area['img']  ?>" alt="">
+                    </a>
+                </li>
+            </ul>
         </section>
 
 
