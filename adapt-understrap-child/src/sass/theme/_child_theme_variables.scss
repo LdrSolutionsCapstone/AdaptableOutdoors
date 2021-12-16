@@ -43,6 +43,7 @@ $container-max-widths: (
     width: 100%;
     margin-bottom: 2rem;
     padding-right: 2rem;
+    max-width: 30rem;
   }
   p {
     margin-bottom: 1rem;
@@ -50,6 +51,8 @@ $container-max-widths: (
 
   h4 {
     margin-bottom: 2rem;
+    width: 100%;
+    text-align: left;
   }
 }
 
@@ -148,4 +151,13 @@ h1 {
 h1,
 h2 {
   font-weight: 800;
+}
+
+@media (min-width: 960px) {
+  .community-child {
+    h4 {
+      width: 28rem;
+      text-align: center;
+    }
+  }
 }

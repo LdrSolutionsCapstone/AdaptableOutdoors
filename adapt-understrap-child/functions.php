@@ -162,63 +162,7 @@ function create_post_type_volunteer()
 
 add_action('init', 'create_post_type_volunteer');
 
-function create_post_type_events()
-{
 
-    // creates label names for the post type in the dashboard the post
-    // panel and in the toolbar.
-    $labels = array(
-        'name' => __('Events'),
-        'singular_name' => __('Events'),
-        'add_new' => 'New Events',
-        'add_new_item' => 'Add New Events',
-        'edit_item' => 'Edit Events',
-        'featured_image' => _x(
-            'Events Post Image',
-            'Overrides the “Featured Image” phrase for this post type. Added in 4.3',
-            'textdomain'
-        ),
-        'set_featured_image' => _x(
-            'Set cover image',
-            'Overrides
-        the “Set featured image” phrase for this post type. Added in 4.3',
-            'textdomain'
-        ),
-        'remove_featured_image' => _x(
-            'Remove cover image',
-            'Overrides the “Remove featured image” phrase for this post type. Added in
-        4.3',
-            'textdomain'
-        ),
-        'use_featured_image' => _x(
-            'Use as cover image',
-            'Overrides the “Use as featured image” phrase for this post type. Added in
-        4.3',
-            'textdomain'
-        ),
-    );
-
-    // creates the post functionality that you want for a full listing
-    $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'has_archive' => true,
-        'rewrite' => array('slug' => 'events'),
-        'menu_position' => 20,
-        // can go to dash-icons to customize icon 
-        'menu_icon' => 'dashicons-tickets-alt',
-        'capability_type' => 'page',
-        'taxonomies' => array('category', 'post_tag'),
-        'supports' => array(
-            'title', 'editor', 'author',
-            'thumbnail', 'excerpt', 'custom-fields'
-        )
-    );
-
-    register_post_type('events', $args);
-}
-
-add_action('init', 'create_post_type_events');
 
 // // image compression
 function my_prefix_regenerate_thumbnail_quality()
@@ -237,3 +181,17 @@ function new_excerpt_more($more)
     }
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+add_action('admin_menu', 'remove_posts_menu');
+function remove_posts_menu()
+{
+    remove_menu_page('edit.php');
+}
+
+//remove comments from pages
+add_action('init', 'remove_comment_support', 100);
+
+function remove_comment_support()
+{
+    remove_post_type_support('page', 'comments');
+}

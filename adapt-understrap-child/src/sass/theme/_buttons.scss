@@ -36,7 +36,10 @@
   color: $purple;
 }
 
-
-.social-links-section{
-  
+@media (min-width: 960px) {
+  .community-child {
+    .btn-primary {
+      margin-left: 7rem;
+    }
+  }
 }
