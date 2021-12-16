@@ -1,16 +1,21 @@
 @charset "UTF-8";
 .community-child {
   width: 80rem;
-  padding: 2rem;
+  margin-bottom: 5rem;
 }
 .community-child img {
   width: 100%;
   margin-bottom: 2rem;
-  max-width: 30rem;
   padding-right: 2rem;
+  max-width: 30rem;
 }
 .community-child p {
   margin-bottom: 1rem;
+}
+.community-child h4 {
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: left;
 }
 
 .site-main-volunteer {
@@ -32,9 +37,77 @@ main {
 }
 
 @media (max-width: 500px) {
-  .community-child {
-    width: 20rem;
-    padding: 2rem;
+  .community-child-content {
+    max-width: 25rem;
+    padding: 0rem;
+  }
+  .community-child-content p {
+    min-width: 15rem;
+  }
+}
+.volunteer-body h2 {
+  width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.volunteer-header {
+  margin-bottom: 4rem;
+}
+
+.volunteer-intro {
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+.volunteer-intro img {
+  width: 35rem;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+.volunteer-intro div {
+  min-width: 19rem;
+  max-width: 50rem;
+}
+
+.social-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0rem;
+}
+.social-container li {
+  flex: 1 1 20rem;
+  list-style: none;
+  text-align: left;
+}
+
+.page-entry-content {
+  padding: 15px;
+}
+.page-entry-content img {
+  width: 100%;
+}
+.page-entry-content .card {
+  width: 30rem;
+}
+.page-entry-content h3 {
+  padding-top: 5rem;
+}
+
+h1 {
+  margin-bottom: 5rem;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+@media (min-width: 960px) {
+  .community-child h4 {
+    width: 28rem;
+    text-align: center;
   }
 }
 *,

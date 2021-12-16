@@ -35,3 +35,11 @@
   text-decoration: none;
   color: $purple;
 }
+
+@media (min-width: 960px) {
+  .community-child {
+    .btn-primary {
+      margin-left: 7rem;
+    }
+  }
+}

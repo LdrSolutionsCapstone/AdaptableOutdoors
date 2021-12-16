@@ -32,6 +32,16 @@ defined('ABSPATH') || exit;
         </div><!-- .entry-content -->
     </header><!-- .entry-header -->
     <main class="site-main" id="main">
+        <?php
+        // $events = tribe_get_events(['posts_per_page' => 5]);
+
+        // Loop through the events, displaying the title and content for each
+        // foreach ($events as $event) {
+        //     echo '<h4>' . $event->post_title . '</h4>';
+        //     echo wpautop($event->post_content);
+        // }
+        // 
+        ?>
 
         <section class="">
             <h2 class="mb-5">Join The Community</h2>
@@ -39,32 +49,26 @@ defined('ABSPATH') || exit;
 
                 <!-- arguments for events -->
                 <?php
-                $args = array(
-                    'post_type' => 'Events',
-                    'posts_per_page' => 3, // display the 3 most recent events 
-                );
-                // pass args into query
-                $the_event_query = new WP_Query($args);
+                $events = tribe_get_events([
+                    'posts_per_page' => 3,
+                    'order' => 'DESC'
+                ]);
                 ?>
 
-                <?php if ($the_event_query->have_posts()) : ?>
-                    <?php while ($the_event_query->have_posts()) : $the_event_query->the_post(); ?>
-                        <!-- CARD LAYOUT HERE -->
-                        <!-- EVENT CARD -->
-                        <div class="community-child-home">
+                <!-- CARD LAYOUT HERE -->
+                <!-- EVENT CARD -->
+                <?php foreach ($events as $event) { ?>
+                    <div class="community-child-home">
 
-                            <div class="card-img-home"><?php echo get_the_post_thumbnail($post->ID, 'large'); ?></div>
-                            <?php the_title('<h3 class="card-event-title">', '</h3>') ?>
-                            <a class="btn-primary" href="https://adapt.web.dmitcapstone.ca/adapt/participate/">Sign up</a>
+                        <div class="card-img-home"><?php echo get_the_post_thumbnail($event->ID, 'large'); ?></div>
+                        <?php echo "<h3 class='card-event-title'>" . $event->post_title . "</h3>" ?>
+                        <a class="btn-primary" href="https://adapt.web.dmitcapstone.ca/adapt/participate/">Sign up</a>
 
 
-                        </div>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
-                <?php else : ?>
-                    <p><?php _e('sorry no posts match the criteria') ?></p>
-                <?php endif; ?>
+                    </div>
+                <?php } ?>
             </div>
+
             <!-- VIEW ALL BUTTON -->
         </section>
         <section class="volunteer-section">
@@ -141,8 +145,32 @@ defined('ABSPATH') || exit;
 
 
         </section>
-        <section>
-            <!-- <h2>Social Links</h2> -->
+        <section class="social-links-section">
+            <h2>Social Links</h2>
+            <ul class="social-container">
+                <?php
+                $social_area = get_field('social_group');
+                $you_tube_area = $social_area['you_tube'];
+                $facebook_area = $social_area['facebook'];
+                $instagram_area = $social_area['instagram'];
+                // if($social_area):
+                ?>
+                <li>
+                    <a href="<?php echo $you_tube_area['link'] ?>">
+                        <img src="<?php echo $you_tube_area['img']  ?>" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo $facebook_area['link'] ?>">
+                        <img src="<?php echo $facebook_area['img']  ?>" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo $instagram_area['link'] ?>">
+                        <img src="<?php echo $instagram_area['img']  ?>" alt="">
+                    </a>
+                </li>
+            </ul>
         </section>
 
 

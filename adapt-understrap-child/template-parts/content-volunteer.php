@@ -24,19 +24,21 @@ defined('ABSPATH') || exit;
     <section class="pt-5">
 
         <!-- BANNER: Front end content -->
-        <header>
+        <header class="volunteer-header">
             <?php
             the_content()
             ?>
         </header>
 
-        <div class="d-flex flex-wrap justify-content-between">
+        <div class="volunteer-body d-flex flex-wrap justify-content-between">
+            <h2>Current Postions</h2>
 
             <!-- arguments for Volunteer -->
             <?php
             $args = array(
                 'post_type' => 'Volunteer',
-                'post_per_page' => 3, // display the 3 most recent Volunteer 
+                'post_per_page' => -1, // display the 3 most recent Volunteer 
+                'order' => 'DESC'
             );
             // pass args into query
             $the_volunteer_query = new WP_Query($args);
@@ -49,7 +51,7 @@ defined('ABSPATH') || exit;
                     <div class="community-child">
                         <?php the_title('<h4 class="card-volunteer-title">', '</h4>') ?>
                         <div class="community-child-content"><?php the_content() ?></div>
-                        <a class="btn-primary" href=" https://adapt.web.dmitcapstone.ca/adapt/participate/">Register</a>
+                        
                     </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
